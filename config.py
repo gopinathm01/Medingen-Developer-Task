@@ -8,7 +8,7 @@ class Config:
     SECRET_KEY = os.getenv("SECRET_KEY")
     JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 
-    # Securely encode password for the URI
+    # Securely encode password for the URI 
     DB_USER = os.getenv("DB_USER")
     DB_PASSWORD = quote_plus(os.getenv("DB_PASSWORD"))
     DB_HOST = os.getenv("DB_HOST")
